@@ -1,0 +1,43 @@
+$primary: rgb(150, 189, 248);
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text] {
+    padding: 6px 12px;
+    box-shadow: (10px 5px 5px $primary);
+}
+
+.container {
+    display: grid;
+    height: 200px;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+button {
+    background-color:$primary;
+    padding: 12px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+h1 {
+    text-shadow: 1px 1px 2px $primary;
+    filter: drop-shadow(0 0 0.75rem $primary);
+}
+.wrapper {
+    font-size: 18px;
+    text-align: center;
+}
+#cityname {
+    
+}
