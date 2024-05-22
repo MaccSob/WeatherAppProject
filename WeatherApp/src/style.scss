@@ -11,6 +11,7 @@ $primary: rgb(150, 189, 248);
 
 input[type=text] {
     padding: 6px 12px;
+    background-color:$primary;
     box-shadow: (10px 5px 5px $primary);
 }
 
@@ -39,5 +40,46 @@ h1 {
     text-align: center;
 }
 #cityname {
-    
 }
+    body[category=bezchmurnie] {
+        background-image: url("clear.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      
+      body[category="zachmurzenie małe"], [category=pochmurnie] {
+        background-image: url("clouds.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      body[category="zachmurzenie duże"] {
+        background-image: url("darkclouds.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100vh;
+      }
+      
+      body[category="słabe opady deszczu"] {
+        background-image: url("icegif.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+      
+      body[category=Clear] .category {
+        background-color: blue;
+        color: white;
+      }
+      
+      body[category=Clouds] .category {
+        background-color: dimgray;
+        color: white;
+      }
+      
+      body[category="słabe opady deszczu"] .category {
+        background-color: black;
+        color: white;
+      }
+

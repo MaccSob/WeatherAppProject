@@ -4,6 +4,7 @@ var wind = document.querySelector('#wind')
 var cityname = document.querySelector('#cityname')
 var pressure = document.querySelector('#pressure');
 var humidity = document.querySelector('#humidity');
+var category = document.querySelector('.category')
 
 const weatherD = document.querySelector('#weather');
 const button = document.querySelector('button');
@@ -20,6 +21,14 @@ button.addEventListener('click', function(){
       var wndspd = data['wind']['speed']
       var press = data['main']['pressure']
       var hum = data['main']['humidity']
+      console.log(data);
+
+
+
+
+      document.body.setAttribute("category", descrip);
+
+
 
 
     temp.innerHTML = `Temperatura: ${(Math.round(temperature - 273.15))}`+ 'C°';
@@ -29,4 +38,7 @@ button.addEventListener('click', function(){
       pressure.innerHTML = `Ciśnienie: ${press}` + 'hpa'
     humidity.innerHTML = `Wilgotność: ${hum}` + '%'
   })
+
+
+  
 })
