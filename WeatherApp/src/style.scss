@@ -1,85 +1,95 @@
-$primary: rgb(150, 189, 248);
+$primary: rgb(44, 52, 63);
 
 
-
+ body {
+    background-image: url("nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+ }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
+
 input[type=text] {
-    padding: 6px 12px;
-    background-color:$primary;
-    box-shadow: (10px 5px 5px $primary);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid $primary;
+    background-color: inherit;
+    border-radius: 5px;
 }
 
 .container {
-    display: grid;
-    height: 200px;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 105px;
 
 }
 button {
-    background-color:$primary;
+    background-color: inherit;
     padding: 12px 12px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 16px;
 }
 h1 {
-    text-shadow: 1px 1px 2px $primary;
-    filter: drop-shadow(0 0 0.75rem $primary);
+    text-shadow: 1px 1px 2px inherit;
+    filter: drop-shadow(0 0 0.75rem inherit);
 }
 .wrapper {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
+    
 }
-#cityname {
-}
+
     body[category=bezchmurnie] {
-        background-image: url("clear.jpg");
+        background-image: url("./images/clear.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
       }
       
-      body[category="zachmurzenie małe"], [category=pochmurnie] {
-        background-image: url("clouds.jpg");
+      body[category="zachmurzenie małe"], [category=pochmurnie], [category= "zachmurzenie umiarkowane"] {
+        background-image: url("./images/clouds.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
       }
       body[category="zachmurzenie duże"] {
-        background-image: url("darkclouds.jpg");
+        background-image: url("./images/darkclouds.jpg");
         background-repeat: no-repeat;
         background-size:cover;
         height: 100vh;
       }
       
-      body[category="słabe opady deszczu"] {
-        background-image: url("icegif.gif");
+      body[category="słabe opady deszczu"], [category="słabe przelotne opady deszczu"]  {
+        background-image: url("./images/icegif.gif");
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
       }
-      
-      body[category=Clear] .category {
-        background-color: blue;
-        color: white;
+      body[category="burze z piorunami"] {
+        background-image: url("./images/thunder.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
       }
-      
-      body[category=Clouds] .category {
-        background-color: dimgray;
-        color: white;
+      body[category="śnieżyca"] {
+        background-image: url("./images/snow.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
       }
-      
-      body[category="słabe opady deszczu"] .category {
-        background-color: black;
-        color: white;
-      }
+
 
