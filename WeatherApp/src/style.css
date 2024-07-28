@@ -20,6 +20,11 @@ input[type=text] {
   border: 3px solid rgb(44, 52, 63);
   background-color: inherit;
   border-radius: 5px;
+  transition: transform 100ms;
+}
+
+input[type=text]:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -33,12 +38,21 @@ input[type=text] {
   margin-top: 105px;
 }
 
+p {
+  padding-top: 25px;
+}
+
 button {
   background-color: inherit;
   padding: 12px 12px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 16px;
+  transition: transform 300ms;
+}
+
+button:hover {
+  transform: translateY(10px);
 }
 
 h1 {
